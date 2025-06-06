@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('b2_c_customers', function (Blueprint $table) {
             $table->id();
             $table->string('email')->unique()->comment('Unique email address of the customer');
-            $table->string('phone')->nullable()->comment('Optional phone number');
+            $table->string('phone')->comment('Customer phone number');
             $table->string('name')->comment('Full name of the customer');
             $table->json('billing_address')->nullable()->comment('Structured JSON: street, city, state, zip');
             $table->json('shipping_address')->nullable()->comment('Structured JSON: street, city, state, zip');

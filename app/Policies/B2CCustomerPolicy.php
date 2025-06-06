@@ -13,7 +13,7 @@ class B2CCustomerPolicy
      */
     public function viewAny(User $user): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -21,7 +21,7 @@ class B2CCustomerPolicy
      */
     public function view(User $user, B2CCustomer $b2CCustomer): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -29,7 +29,7 @@ class B2CCustomerPolicy
      */
     public function create(User $user): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -37,7 +37,7 @@ class B2CCustomerPolicy
      */
     public function update(User $user, B2CCustomer $b2CCustomer): bool
     {
-        return false;
+        return true;
     }
 
     /**

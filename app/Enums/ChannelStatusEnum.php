@@ -2,7 +2,7 @@
 
 namespace App\Enums;
 
-enum ChannelEnum: string
+enum ChannelStatusEnum: string
 {
     case WEBSITE = 'website';
     case STORE = 'store';
